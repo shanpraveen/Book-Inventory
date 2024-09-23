@@ -1,0 +1,67 @@
+<div class="row">
+    <main class="col-md-12">
+        <br>
+        <h2>{{viewData.book.title}} - Book ID: {{viewData.book.bookId}}</h2>
+        <hr />
+        <form method="post" action="/book/update">
+            <input type="hidden" name="bookId" value="{{viewData.book.bookId}}" />
+            
+            <fieldset>
+                <legend>Book Information</legend>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Title:</label>
+                            <input class="form-control" name="title" type="text" value="{{viewData.book.title}}" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Genre:</label>
+                            <input class="form-control" name="genre" type="text" value="{{viewData.book.genre}}" />
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Publication Information</legend>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Publication Year:</label>
+                            <input class="form-control" name="publicationYear" type="number" value="{{viewData.book.publicationYear}}" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Available Copies:</label>
+                            <input class="form-control" name="availableCopies" type="number" value="{{viewData.book.availableCopies}}" />
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Author Information</legend>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Author First Name:</label>
+                            <input class="form-control" name="authorFirstName" type="text" value="{{viewData.book.author.firstName}}" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Author Last Name:</label>
+                            <input class="form-control" name="authorLastName" type="text" value="{{viewData.book.author.lastName}}" />
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            
+            <hr />
+            <input type="submit" class="btn btn-primary float-right" value="Update Book" /><br /><br /><br />
+        </form>
+    </main>
+</div>

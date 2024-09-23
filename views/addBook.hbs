@@ -1,0 +1,84 @@
+<div class="row"> 
+    <main class="col-md-12">
+        <form method="POST" action="/books/add">
+            <fieldset>
+                <legend>Book Information</legend>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Title:</label>
+                            <input class="form-control" name="title" type="text" required />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Author:</label>
+                            <input class="form-control" name="author" type="text" required />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Genre:</label>
+                            <input class="form-control" name="genre" type="text" required />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>ISBN:</label>
+                            <input class="form-control" name="isbn" type="text" required />
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Publishing Information</legend>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Publisher:</label>
+                            <input class="form-control" name="publisher" type="text" required />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Year Published:</label>
+                            <input class="form-control" name="year" type="number" min="1000" max="9999" required />
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Library Information</legend>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="course">Available in Section:</label>
+                            {{#if sections}}
+                            <select class="form-control" name="section" id="section" required>
+                                <option value="">Select Section</option>
+                                {{#each sections}}
+                                <option value="{{sectionId}}">{{sectionName}}</option>
+                                {{/each}}
+                            </select>
+                            {{else}}
+                            <div>No Sections Available</div>
+                            {{/if}}
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="available" id="available">
+                            <label class="form-check-label" for="available">
+                                Available for Loan
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <hr />
+            <input type="submit" class="btn btn-primary float-right" value="Add Book" /><br /><br /><br />
+        </form>
+    </main>
+</div>

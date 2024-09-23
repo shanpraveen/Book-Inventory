@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+    background: linear-gradient(to right, #cccac9, #ffffff); /* Soft, elegant gradient */
+    color: #333;
+}
+
+.bg-light {
+    background: linear-gradient(to right, #cb1174, #2575fc); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: #fff !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-light .navbar-brand {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-link {
+    color: #fff !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #ffdd57 !important; /* Warm accent color */
+}
+
+.btn-primary {
+    background: linear-gradient(to right, #ff512f, #dd2476); /* Striking gradient */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, #dd2476, #ff512f); /* Inverse gradient */
+}
+
+/* General table styles */
+table {
+    background-color: #fff;
+    color: #333;
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+caption {
+    caption-side: top;
+    text-align: left;
+    font-weight: bold;
+    padding: 0.5rem;
+    color: #292e49;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    border-bottom: 2px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 0.75rem;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+}
+
+thead th {
+    background: linear-gradient(to right, #ed84bc, #649bf9);
+    color: #fff;
+    border-bottom: 2px solid #dee2e6;
+}
+
+tbody tr:hover {
+    background: #f1f1f1;
+}
+
+tfoot td {
+    background: #f9f9f9;
+    font-weight: bold;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: #e2e6ea;
+}
+
+/* Links within tables */
+table a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+table a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #292e49;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    color: #333;
+    font-size: large;
+}
+
+p span {
+    color: #cb1174;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #cb1174;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #2575fc;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    background-color: #ffffff; 
+    color: #cb1174 !important; 
+    font-weight:700;
+    border-radius: 7px; 
+  }
+
+legend {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #8839dd;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Minimalistic list styles */
+.styled-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.styled-list > li {
+    background: #fff;
+    color: #333;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+}
+
+.styled-list > li > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0 1rem;
+}
+
+.styled-list > li > ul > li {
+    background: #f9f9f9;
+    color: #333;
+    padding: 0.5rem;
+    margin: 0.25rem 0;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+}
+
+.styled-list > li > ul > li > ul {
+    margin-left: 1rem;
+}
+
+.styled-list > li > ul > li > ul > li {
+    background: #fff;
+    padding: 0.5rem;
+    border-left: 3px solid #ddd;
+}
+
+/* Links within lists */
+.styled-list a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.styled-list a:hover {
+    color: #0056b3;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+.image-container img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px; 
+}
+
